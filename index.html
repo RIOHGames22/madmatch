@@ -327,11 +327,11 @@
     }
 
     var buildUrl = "Build";
-    var loaderUrl = buildUrl + "/nocomp1.loader.js";
+    var loaderUrl = buildUrl + "/nocomp2.loader.js";
     var config = {
-      dataUrl: buildUrl + "/nocomp1.data",
-      frameworkUrl: buildUrl + "/nocomp1.framework.js",
-      codeUrl: buildUrl + "/nocomp1.wasm",
+      dataUrl: buildUrl + "/nocomp2.data",
+      frameworkUrl: buildUrl + "/nocomp2.framework.js",
+      codeUrl: buildUrl + "/nocomp2.wasm",
       streamingAssetsUrl: "StreamingAssets",
       companyName: "DefaultCompany",
       productName: "OH Memory Game",
@@ -371,8 +371,8 @@
           'info'
         ).then(res => {
           // if (sweed) {
-            unityInstance.SetFullscreen(1);
-            sessionStorage.setItem('fullscreen', "yes");
+          unityInstance.SetFullscreen(1);
+          sessionStorage.setItem('fullscreen', "yes");
           // } else {
           //   swee.then(res => {
           //     unityInstance.SetFullscreen(1);
